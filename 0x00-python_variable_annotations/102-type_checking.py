@@ -6,6 +6,7 @@ from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """test function"""
     zoomed_in: List[int] = [
         item for item in lst
         for i in range(factor)
