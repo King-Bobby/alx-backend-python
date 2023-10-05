@@ -5,7 +5,7 @@ Contains the function zoom_array
 from typing import Tuple, List
 
 
-def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     zoomed_in: List[int] = [
         item for item in lst
         for i in range(factor)
@@ -13,7 +13,7 @@ def zoom_array(lst: List[int], factor: int = 2) -> List[int]:
     return zoomed_in
 
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
